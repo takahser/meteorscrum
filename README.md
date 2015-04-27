@@ -1,2 +1,2 @@
 # meteorscrum
-scrumboard app created with Meteor('https://www.meteor.com')
+scrumboard app created with [Meteor](https://www.meteor.com)
