@@ -1,9 +1,14 @@
+//  can be accessed from both the server and the client & update themselves automatically
+Tasks = new Mongo.Collection("tasks");
+
 // Meteor client code
 if (Meteor.isClient) {
 
+
+
   // You can pass data into templates from your JavaScript code by defining helpers.
   Template.body.helpers({
-    tasks: [
+    /*tasksStatic: [
       {
         name : 'Learn AngularJs',
         info : 'Blubb',
@@ -23,6 +28,11 @@ if (Meteor.isClient) {
         status: 'Done',
         personResponsible: 'Bruce Lee'
       }
-    ]
+    ]*/
+
+    tasks: function () {
+      return Tasks.find({});
+    }
+
   });
 }
