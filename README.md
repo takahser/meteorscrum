@@ -1,2 +1,2 @@
 # meteorscrum
-demo meteor application containing a scrum board
+scrumboard app created with Meteor('https://www.meteor.com')
